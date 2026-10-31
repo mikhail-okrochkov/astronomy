@@ -1,0 +1,35 @@
+{
+ "params": {
+  "format": "json",
+  "OBJ_DATA": "NO",
+  "MAKE_EPHEM": "YES",
+  "EPHEM_TYPE": "VECTORS",
+  "CENTER": "500@10",
+  "REF_PLANE": "ECLIPTIC",
+  "REF_SYSTEM": "ICRF",
+  "OUT_UNITS": "AU-D",
+  "VEC_TABLE": "2",
+  "CSV_FORMAT": "YES",
+  "TIME_TYPE": "TDB",
+  "COMMAND": "'3'",
+  "TLIST": "'2451545.000000000'"
+ },
+ "target": "Earth-Moon Barycenter (3)",
+ "source": {
+  "source": "NASA/JPL Horizons API",
+  "version": "1.2"
+ },
+ "jd_tdb": [
+  2451545.0
+ ],
+ "state": [
+  [
+   -0.1771587841839055,
+   0.9672193524609504,
+   -1.139275508446145e-06,
+   -0.01720310905522688,
+   -0.003163911860749114,
+   2.424167134816753e-08
+  ]
+ ]
+}

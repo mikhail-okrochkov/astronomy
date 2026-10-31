@@ -1,0 +1,35 @@
+{
+ "params": {
+  "format": "json",
+  "OBJ_DATA": "NO",
+  "MAKE_EPHEM": "YES",
+  "EPHEM_TYPE": "VECTORS",
+  "CENTER": "500@10",
+  "REF_PLANE": "ECLIPTIC",
+  "REF_SYSTEM": "ICRF",
+  "OUT_UNITS": "AU-D",
+  "VEC_TABLE": "2",
+  "CSV_FORMAT": "YES",
+  "TIME_TYPE": "TDB",
+  "COMMAND": "'7'",
+  "TLIST": "'2451545.000000000'"
+ },
+ "target": "Uranus Barycenter (7)",
+ "source": {
+  "version": "1.2",
+  "source": "NASA/JPL Horizons API"
+ },
+ "jd_tdb": [
+  2451545.0
+ ],
+ "state": [
+  [
+   14.43185661438178,
+   -13.73432146877096,
+   -0.2381416877992503,
+   0.00267810559142015,
+   0.002672695895712686,
+   -2.477206355505103e-05
+  ]
+ ]
+}

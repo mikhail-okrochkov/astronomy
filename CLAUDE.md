@@ -25,19 +25,29 @@ articles, explainers).
 - Tests: `pytest` (`uv run pytest`). Lint/format: `ruff`
   (`uv run ruff check . && uv run ruff format .`).
 
-## Layout (planned; update this section as the repo grows)
+## Layout (update this section as the repo grows)
 
 ```
-astrosim/            shared library code (integrators, physics, plotting helpers)
+src/physics/         shared physics library (installed package `physics`)
+  gravity.py         Newtonian gravity by direct summation: accelerations,
+                     field_at (test particles), potential_at, potential_energy
+  units.py           UnitSystem + SI / SOLAR (AU, M☉, yr) / GALACTIC (kpc, M☉, Myr)
+  integrators.py     fixed-step symplectic integrators: leapfrog, yoshida4
+  kepler.py          orbital elements <-> state, exact two-body propagation
 simulations/<name>/  one directory per simulation
+  solar_system/      Sun + 8 planets from JPL Horizons; N-body vs Sun-only comparison
+    horizons.py      cached JPL Horizons vector client (move to src/ when reused)
+    data/            cached Horizons responses (committed for reproducibility)
   README.md          question, assumptions, how to run, results summary
   run.py             entry point that generates the outputs
   outputs/           generated figures/animations (gitignored unless published)
 posts/<slug>/        drafts of write-ups, linking to simulation outputs
-tests/               tests for astrosim/ and physics sanity checks
+IDEAS.md             backlog of candidate simulations
+tests/               tests for src/ and physics sanity checks
 ```
 
-Move code into `astrosim/` once a second simulation needs it, not before.
+Gravity only computes forces; time integration belongs in a separate module.
+Move simulation code into `src/` once a second simulation needs it, not before.
 
 ## Physics & numerical conventions
 

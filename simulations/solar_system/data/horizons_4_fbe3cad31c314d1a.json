@@ -1,0 +1,35 @@
+{
+ "params": {
+  "format": "json",
+  "OBJ_DATA": "NO",
+  "MAKE_EPHEM": "YES",
+  "EPHEM_TYPE": "VECTORS",
+  "CENTER": "500@10",
+  "REF_PLANE": "ECLIPTIC",
+  "REF_SYSTEM": "ICRF",
+  "OUT_UNITS": "AU-D",
+  "VEC_TABLE": "2",
+  "CSV_FORMAT": "YES",
+  "TIME_TYPE": "TDB",
+  "COMMAND": "'4'",
+  "TLIST": "'2451545.000000000'"
+ },
+ "target": "Mars Barycenter (4)",
+ "source": {
+  "version": "1.2",
+  "source": "NASA/JPL Horizons API"
+ },
+ "jd_tdb": [
+  2451545.0
+ ],
+ "state": [
+  [
+   1.390715921746287,
+   -0.01341631815233992,
+   -0.03446766277585426,
+   0.000671499521033585,
+   0.0151872480911503,
+   0.0003016517626039734
+  ]
+ ]
+}
